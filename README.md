@@ -8,7 +8,7 @@ User = Benutzer & Admin = Entwickler
 
 
 
-Master.NET(ist wie GitHub als X-Hub CMD = CMD-X):
+# Master.NET(ist wie GitHub als X-Hub CMD = CMD-X):
 
 MASTER == ADMIN(Admins sind immer Master von eigenen eXtended öko extentioned daten)
 
@@ -37,7 +37,7 @@ Phrasen Benutzername Passwort Wallet adresse Wallet Hash manuell-transaktions ha
 
 
 
-Test.NET(ist wie Preview in einer code Datei):
+# Test.NET(ist wie Preview in einer code Datei):
 
 TXf & TXi = TX
 
@@ -84,46 +84,60 @@ Home, Profil & Settings Buttons & Pop ups:
 
 
 
-Main.NET:
+# Main.NET:
 
 TXf & TXi = TX
 
-Home Profil Buttons & Pop ups:
-
+## Home Profil Buttons & Pop ups:
+```
 Register/Login = Button
+```
 
+```
 Home & Profil -> wenn ausgeloggt dann read only
 Register = Account Erstellen
+```
 
+```
 Login = Account Anmelden -> wenn eingeloggt dann write only
+```
+## Home, Profil & Settings Buttons & Pop ups:
 
-Home, Profil & Settings Buttons & Pop ups:
+Home = Register & Login 
+       Wallet Blockchain as read only mode Landing Page & Wallet as Blockchain write & read only Application Page
+       Benutzer/User & Entwickler/Dev Documentations
+       Profil = Settings
 
-
-
-
-Wallet:
+## Wallet:
+```
 senden = send 
+```
 
+```
 empfangen = receive 
+```
 
-
+```
 Mine = Mining-start-&-stop
+```
 
+```
 Stake = Staking 
 Unstake = Unstaking 
+```
 
-
+```
 transaction = hash
+```
 
+### rApp Store(VM) & (API)Explor-Viewer: 
+***(action event & post)***
 
-rApp Store(VM) & (API)Explor-Viewer: 
-(action event & post)
-
+```
 search = suchen 
+```
 
 
-Home, Profil & Settings Buttons & Pop ups:
 
 
 
