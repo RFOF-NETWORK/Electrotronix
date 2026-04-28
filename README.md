@@ -14,19 +14,7 @@ MASTER == ADMIN(Admins sind immer Master von eigenen eXtended öko extentioned d
 
 dropdown menü (ist für die weiterentwicklung einer jeder seite im MASTER Modus)
 
-
-
-
-
-
-
-
-
-
-Test.NET(ist wie Preview in einer code Datei):
-
 TX = TXi & TXf
-
 
 Home Profil Buttons & Pop ups:
 
@@ -40,6 +28,29 @@ Login = Account Anmelden -> wenn eingeloggt dann write only
 
 Home, Profil & Settings Buttons & Pop ups:
 
+
+
+Wallet Profil Links Buttons & Setting Pop ups:
+
+Phrasen Benutzername Passwort Wallet adresse Wallet Hash manuell-transaktions hash interactions-transactions hash
+
+
+
+
+Test.NET(ist wie Preview in einer code Datei):
+
+TXf & TXi = TX
+
+Home Profil Buttons & Pop ups:
+
+Register/Login = Button
+
+Home & Profil -> wenn ausgeloggt dann read only
+Register = Account Erstellen
+
+Login = Account Anmelden -> wenn eingeloggt dann write only
+
+Home, Profil & Settings Buttons & Pop ups:
 
 
 
@@ -56,6 +67,8 @@ Stake = Staking
 Unstake = Unstaking 
 
 
+transaction = hash
+
 
 rApp Store(VM) & (API)Explor-Viewer: 
 (action event & post)
@@ -63,7 +76,7 @@ rApp Store(VM) & (API)Explor-Viewer:
 search = suchen 
 
 
-
+Home, Profil & Settings Buttons & Pop ups:
 
 
 
@@ -84,9 +97,7 @@ Register = Account Erstellen
 
 Login = Account Anmelden -> wenn eingeloggt dann write only
 
-
 Home, Profil & Settings Buttons & Pop ups:
-
 
 
 
@@ -103,11 +114,22 @@ Stake = Staking
 Unstake = Unstaking 
 
 
+transaction = hash
+
 
 rApp Store(VM) & (API)Explor-Viewer: 
 (action event & post)
 
 search = suchen 
+
+
+Home, Profil & Settings Buttons & Pop ups:
+
+
+
+
+
+
 
 
 
