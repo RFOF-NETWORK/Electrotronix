@@ -2,9 +2,9 @@
 Chain-/Viewer &amp; Wallet
 
 Rollen in Modis:
-
+```
 User = Benutzer & Admin = Entwickler
-
+```
 
 
 
@@ -93,9 +93,9 @@ Home, Profil & Settings Buttons & Pop ups:
 
 
 # Main.NET:
-
+```
 TXf & TXi = TX
-
+```
 ## Home Profil Buttons & Pop ups:
 ```
 Register/Login = Button
