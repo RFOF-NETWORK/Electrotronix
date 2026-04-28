@@ -6,7 +6,10 @@ Rollen in Modis:
 User = Benutzer & Admin = Entwickler
 ```
 
-
+Pop Ups bedeutung:
+```
+protokollierung & auftauchende eingabe fenster oder der switch der eben durch den tab auf einen hash link in ein andere seite wechselt etc
+```
 
 # Master.NET(ist wie GitHub als X-Hub CMD = CMD-X):
 ```
@@ -31,7 +34,10 @@ Login = Account Anmelden -> wenn eingeloggt dann write only
 ```
 Home, Profil & Settings Buttons & Pop ups:
 ```
-
+Home, Profil & Settings Buttons & Pop ups:
+```
+nur Register/Login Button Pop up fenster ist durch antippen des Buttons wen man unangeneldet ist aufrufbar und die rApps des stores also die die darinen sind = Electrotronix(ist die Wallet) X-Hub und Explore Viewer, müssen die einzigen 4 Pop Ups sein wenn man unangemeldet die website betritt.
+```
 
 Wallet Profil Links Buttons & Setting Pop ups:
 ```
@@ -56,8 +62,9 @@ Register = Account Erstellen
 Login = Account Anmelden -> wenn eingeloggt dann write only
 ```
 Home, Profil & Settings Buttons & Pop ups:
-
-
+```
+nur Register/Login Button Pop up fenster ist durch antippen des Buttons wen man unangeneldet ist aufrufbar und die rApps des stores also die die darinen sind = Electrotronix(ist die Wallet) X-Hub und Explore Viewer, müssen die einzigen 4 Pop Ups sein wenn man unangemeldet die website betritt.
+```
 
 
 Wallet:
@@ -84,12 +91,19 @@ rApp Store(VM) & (API)Explor-Viewer:
 search = suchen 
 ```
 ```
-Home, Profil & Settings Buttons & Pop ups:
+Home = X-Hub, Profil & Settings Buttons & Pop ups:
 ```
 
+```
+Home = Explore Viewer, Profil & Settings Buttons & Pop ups: 
+```
 
-
-
+```
+X-Hub hat eigenes Profil & Settings Buttons & Pop ups trotzdem immer selber rApp Account des rApp store (X-Hub Wallet und Explore Viewer).
+```
+```
+Explore Viewe hat eigenes Profil & Settings Buttons & Pop ups trotzdem immer selber rApp Account des rApp store (X-Hub Wallet und Explore Viewer).
+```
 
 
 # Main.NET:
@@ -156,7 +170,10 @@ search = suchen
 ```
 
 
-
+Home, Profil & Settings Buttons & Pop ups:
+```
+nur Register/Login Button Pop up fenster ist durch antippen des Buttons wen man unangeneldet ist aufrufbar und die rApps des stores also die die darinen sind = Electrotronix(ist die Wallet) X-Hub und Explore Viewer, müssen die einzigen 4 Pop Ups sein wenn man unangemeldet die website betritt.
+```
 
 
 
