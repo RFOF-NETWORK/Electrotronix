@@ -6,10 +6,13 @@ REST-FUCKUP-OPEN/
 │
 ├─ index.html
 │
+├── browser.html
 ├─ portable.js
 ├─ portable.css
 ├─ portable.html
 ├─ portable.config.js
+├── portable-clearing.js
+├── portable-clearing.css
 │
 ├─ python/
 │   ├─ logic.py
@@ -350,24 +353,68 @@ REST-FUCKUP-OPEN/
 │   ├── backend-errors.md
 │   ├── minimal-client.md
 │   ├── offline-demo.md
+│   ├── chain-clearing.md
+│   ├── guci.md
+│   ├── eccu.md
+│   ├── txi.md
+│   ├── txf.md
+│   ├── aaa.md
+│   ├── takt.md
+│   ├── genesis-view.md
+│   ├── sync-view.md
+│   ├── cluster-logic.md
+│   ├── block-simulation.md
+│   ├── hash-system.md
+│   ├── registry.md
+│   ├── clearing-energy.md
+│   ├── clearing-events.md
+│   ├── clearing-status.md
+│   ├── identity-layer.md
+│   ├── master-rfof-network-id.md
+│   ├── session-link.md
+│   ├── bip39.md
+│   ├── bip44.md
+│   ├── seed-derivation.md
+│   ├── hd-wallet.md
+│   ├── mnemonic.md
+│   ├── entropy.md
+│   ├── ecc.md
+│   ├── ecdsa.md
+│   ├── wallet-core.md
+│   ├── wallet-security.md
+│   ├── wallet-identity.md
+│   ├── wallet-address.md
+│   ├── derivation-paths.md
+│   ├── keypair-generation.md
+│   ├── pbkdf2.md
+│   ├── hmac.md
+│   ├── sha256.md
+│   ├── sha512.md
+│   ├── sha1024.md
+│   ├── aes256.md
+│   ├── aes512.md
+│   ├── aes1024.md
+│   ├── deterministic-encryption.md
+│   ├── qnet-hash-adapter.md
+│   ├── rfof-goldenchain-adapter.md
+│   ├── boxchain-adapter.md
+│   ├── pzqqet.md
+│   ├── pzqqet-hash-cascade.md
+│   ├── pzqqet-aes-cascade.md
+│   ├── pzqqet-vs-sha-aes-mask.md
+│   └── crypto-overview.md
 │   └── portable.md
 │
-└─ examples/
-    ├── minimal-client.html
-    ├── offline-demo.html
-    ├── minimal-client.js
-    ├── minimal-client.css
-    ├── offline-demo.js
-    ├── offline-demo.css
-    ├── multi-domain-demo.js
-    └── multi-domain-demo.css
-
-
-CHAIN-CLEARING/
-│
-├── browser.html
-├── portable-clearing.js
-├── portable-clearing.css
+├── DOCS-QUBIT-PZQQET/ (Archiv & Manifeste)
+│   ├── pzqqet-qubit-theory.md       # Mathematische Basis (RFOF-Manifest)
+│   ├── rfof-network-manifest.md     # RFOF-Exklusivitäts-Dokument
+│   ├── sato-gate-manual.md          # Anleitung für A1=42E0 Rotationen
+│   ├── satoramy-gate-manual.md      # Vertiefung der Gatter-Operationen
+│   ├── 100-million-percent.md       # Gewinnraten-Metriken (2029-Fokus)
+│   ├── pzqqet-axiomatics.md         # Die einzige Wahrheit der Struktur
+│   ├── entanglement-protocols.md    # Verschränkungs-Vorgaben
+│   ├── gate-operation-manual.md     # Bedienung der Gatter
+│   └── q-takt-axiom.md              # Der zeitlose Anfang (PRAI)
 │
 ├── core/
 │   ├── guci.js
@@ -588,62 +635,7 @@ CHAIN-CLEARING/
 │   ├── registry/
 │   └── blocks/
 │
-├── docs/
-│   ├── chain-clearing.md
-│   ├── guci.md
-│   ├── eccu.md
-│   ├── txi.md
-│   ├── txf.md
-│   ├── aaa.md
-│   ├── takt.md
-│   ├── genesis-view.md
-│   ├── sync-view.md
-│   ├── cluster-logic.md
-│   ├── block-simulation.md
-│   ├── hash-system.md
-│   ├── registry.md
-│   ├── clearing-energy.md
-│   ├── clearing-events.md
-│   ├── clearing-status.md
-│   ├── identity-layer.md
-│   ├── master-rfof-network-id.md
-│   ├── session-link.md
-│   ├── bip39.md
-│   ├── bip44.md
-│   ├── seed-derivation.md
-│   ├── hd-wallet.md
-│   ├── mnemonic.md
-│   ├── entropy.md
-│   ├── ecc.md
-│   ├── ecdsa.md
-│   ├── wallet-core.md
-│   ├── wallet-security.md
-│   ├── wallet-identity.md
-│   ├── wallet-address.md
-│   ├── derivation-paths.md
-│   ├── keypair-generation.md
-│   ├── pbkdf2.md
-│   ├── hmac.md
-│   ├── sha256.md
-│   ├── sha512.md
-│   ├── sha1024.md
-│   ├── aes256.md
-│   ├── aes512.md
-│   ├── aes1024.md
-│   ├── deterministic-encryption.md
-│   ├── qnet-hash-adapter.md
-│   ├── rfof-goldenchain-adapter.md
-│   ├── boxchain-adapter.md
-│   ├── pzqqet.md
-│   ├── pzqqet-hash-cascade.md
-│   ├── pzqqet-aes-cascade.md
-│   ├── pzqqet-vs-sha-aes-mask.md
-│   └── crypto-overview.md
-
-
-RFOF-QNET-CORE/
-│
-├── 🐰-TIMING-ENGINE/ (Der PZQQET-Puls)
+├── TIMING-ENGINE/ (Der PZQQET-Puls)
 │   ├── rfof-takt-pulse.js           # Absoluter Systemtakt (Rabbit-Sync)
 │   ├── perpetual-start-point.js     # PZQQET-Nullpunkt-Logik
 │   ├── infinite-loop-stabilizer.py  # Stabilisierung der endlosen Dimensionen
@@ -702,27 +694,25 @@ RFOF-QNET-CORE/
 │   ├── noise-reduction-filter.js    # Rauschunterdrückung
 │   └── thermal-state-monitor.js     # Thermische Überwachung
 │
-├── DOCS-QUBIT-PZQQET/ (Archiv & Manifeste)
-│   ├── pzqqet-qubit-theory.md       # Mathematische Basis (RFOF-Manifest)
-│   ├── rfof-network-manifest.md     # RFOF-Exklusivitäts-Dokument
-│   ├── sato-gate-manual.md          # Anleitung für A1=42E0 Rotationen
-│   ├── satoramy-gate-manual.md      # Vertiefung der Gatter-Operationen
-│   ├── 100-million-percent.md       # Gewinnraten-Metriken (2029-Fokus)
-│   ├── pzqqet-axiomatics.md         # Die einzige Wahrheit der Struktur
-│   ├── entanglement-protocols.md    # Verschränkungs-Vorgaben
-│   ├── gate-operation-manual.md     # Bedienung der Gatter
-│   └── q-takt-axiom.md              # Der zeitlose Anfang (PRAI)
-│
-└── RFOF-QUBIT-TESTS/
-    ├── rabbit-speed-test.js         # Takt-Geschwindigkeitsprüfung (🐰⏱️)
-    ├── pzqqet-convergence.py        # Konvergenz der Dimensionen
-    ├── sato-resonance-test.py       # Resonanz-Check der SATO-Ebene
-    ├── 100-million-percent.js       # Simulation der Gewinnraten
-    ├── sato-check.js                # Validierung der SATO-Ebene
-    ├── rabbit-interference.test.js  # Interferenz-Messung
-    ├── entanglement-test.py         # RFOF-Verschränkungs-Validierung
-    ├── superposition-stability.js   # Stabilitäts-Check
-    └── quantum-interference.test.js # Quanten-Interferenz-Analyse
+└─ examples/
+    ├── minimal-client.html
+    ├── offline-demo.html
+    ├── minimal-client.js
+    ├── minimal-client.css
+    ├── offline-demo.js
+    ├── offline-demo.css
+    ├── multi-domain-demo.js
+    ├── multi-domain-demo.css
+    └── RFOF-QUBIT-TESTS/
+        ├── rabbit-speed-test.js         # Takt-Geschwindigkeitsprüfung
+        ├── pzqqet-convergence.py        # Konvergenz der Dimensionen
+        ├── sato-resonance-test.py       # Resonanz-Check der SATO-Ebene
+        ├── 100-million-percent.js       # Simulation der Gewinnraten
+        ├── sato-check.js                # Validierung der SATO-Ebene
+        ├── rabbit-interference.test.js  # Interferenz-Messung
+        ├── entanglement-test.py         # RFOF-Verschränkungs-Validierung
+        ├── superposition-stability.js   # Stabilitäts-Check
+        └── quantum-interference.test.js # Quanten-Interferenz-Analyse
 
 
 
