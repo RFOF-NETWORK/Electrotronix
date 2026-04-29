@@ -294,8 +294,7 @@ X-Hub hat eigenes Profil & Settings Buttons & Pop ups trotzdem immer selber rApp
 ```
 ```
 Explore Viewe hat eigenes Profil & Settings Buttons & Pop ups trotzdem immer selber rApp Account des rApp store (X-Hub Wallet und Explore Viewer).
-```
-
+``` 
 
 
 
