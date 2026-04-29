@@ -1,7 +1,7 @@
 # Electrotronix
 Chain-/Viewer &amp; Wallet
 
-
+```
 REST-FUCKUP-OPEN/
 │
 ├─ index.html
@@ -361,7 +361,7 @@ REST-FUCKUP-OPEN/
     ├── offline-demo.css
     ├── multi-domain-demo.js
     └── multi-domain-demo.css
-
+```
 
 Rollen in Modis:
 ```
