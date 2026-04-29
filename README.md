@@ -361,6 +361,371 @@ REST-FUCKUP-OPEN/
     ├── offline-demo.css
     ├── multi-domain-demo.js
     └── multi-domain-demo.css
+
+
+CHAIN-CLEARING/
+│
+├── browser.html
+├── portable-clearing.js
+├── portable-clearing.css
+│
+├── core/
+│   ├── guci.js
+│   ├── eccu.js
+│   ├── txi.js
+│   ├── txf.js
+│   ├── tx-router.js
+│   ├── tx-validator.js
+│   ├── tx-fee.js
+│   ├── hash-core.js
+│   ├── hash-linker.js
+│   ├── hash-viewer.js
+│   ├── block-core.js
+│   ├── block-simulator.js
+│   ├── block-navigation.js
+│   ├── cluster-core.js
+│   ├── cluster-loader.js
+│   ├── cluster-matrix.js
+│   ├── cluster-energy.js
+│   ├── cluster-events.js
+│   ├── genesis-view.js
+│   ├── sync-view.js
+│   ├── takt-generator.js
+│   ├── aaa-validator.js
+│   ├── clearing-state.js
+│   ├── clearing-events.js
+│   ├── clearing-energy.js
+│   ├── clearing-status.js
+│   ├── clearing-router.js
+│   ├── identity-guci.js
+│   ├── identity-master.js
+│   ├── identity-device.js
+│   ├── session-link.js
+│   ├── session-verify.js
+│   ├── session-sync.js
+│   ├── registry-link.js
+│   ├── registry-verify.js
+│   ├── registry-matrix.js
+│   ├── index.js
+│   └── utils.js
+│
+├── crypto/
+│   ├── bip39/
+│   │   ├── bip39.js
+│   │   ├── bip39.py
+│   │   ├── mnemonic-generator.js
+│   │   ├── mnemonic-generator.py
+│   │   ├── entropy.js
+│   │   ├── entropy.py
+│   │   ├── checksum.js
+│   │   ├── checksum.py
+│   │   ├── wordlist/
+│   │   │   ├── english.txt
+│   │   │   ├── german.txt
+│   │   │   ├── french.txt
+│   │   │   ├── spanish.txt
+│   │   │   ├── italian.txt
+│   │   │   ├── japanese.txt
+│   │   │   └── chinese_simplified.txt
+│   │   └── bip39.md
+│   │
+│   ├── bip44/
+│   │   ├── bip44.js
+│   │   ├── bip44.py
+│   │   ├── derivation-paths.js
+│   │   ├── derivation-paths.py
+│   │   ├── hd-wallet.js
+│   │   ├── hd-wallet.py
+│   │   ├── keypair-generator.js
+│   │   ├── keypair-generator.py
+│   │   ├── address-generator.js
+│   │   ├── address-generator.py
+│   │   └── bip44.md
+│   │
+│   ├── ecc/
+│   │   ├── secp256k1.js
+│   │   ├── secp256k1.py
+│   │   ├── curve.js
+│   │   ├── curve.py
+│   │   ├── point.js
+│   │   ├── point.py
+│   │   ├── ecdsa-sign.js
+│   │   ├── ecdsa-sign.py
+│   │   ├── ecdsa-verify.js
+│   │   ├── ecdsa-verify.py
+│   │   └── ecc.md
+│   │
+│   ├── pzqqet/
+│   │   ├── pzqqet256-hash.js
+│   │   ├── pzqqet256-hash.py
+│   │   ├── pzqqet512-hash.js
+│   │   ├── pzqqet512-hash.py
+│   │   ├── pzqqet1024-hash.js
+│   │   ├── pzqqet1024-hash.py
+│   │   ├── pzqqet256-aes.js
+│   │   ├── pzqqet256-aes.py
+│   │   ├── pzqqet512-aes.js
+│   │   ├── pzqqet512-aes.py
+│   │   ├── pzqqet1024-aes.js
+│   │   ├── pzqqet1024-aes.py
+│   │   ├── pzqqet-cascade.js
+│   │   ├── pzqqet-cascade.py
+│   │   └── pzqqet.md
+│   │
+│   ├── seed/
+│   │   ├── seed-derivation.js
+│   │   ├── seed-derivation.py
+│   │   ├── pbkdf2.js
+│   │   ├── pbkdf2.py
+│   │   ├── hmac.js
+│   │   ├── hmac.py
+│   │   ├── sha256.js
+│   │   ├── sha256.py
+│   │   ├── sha512.js
+│   │   ├── sha512.py
+│   │   ├── sha1024.js
+│   │   ├── sha1024.py
+│   │   └── seed.md
+│   │
+│   ├── aes/
+│   │   ├── aes256.js
+│   │   ├── aes256.py
+│   │   ├── aes512.js
+│   │   ├── aes512.py
+│   │   ├── aes1024.js
+│   │   ├── aes1024.py
+│   │   ├── deterministic-encryption.js
+│   │   ├── deterministic-encryption.py
+│   │   └── aes.md
+│   │
+│   ├── wallet/
+│   │   ├── wallet-core.js
+│   │   ├── wallet-core.py
+│   │   ├── wallet-identity.js
+│   │   ├── wallet-identity.py
+│   │   ├── wallet-security.js
+│   │   ├── wallet-security.py
+│   │   ├── wallet-restore.js
+│   │   ├── wallet-restore.py
+│   │   ├── wallet-backup.js
+│   │   ├── wallet-backup.py
+│   │   ├── wallet-sign.js
+│   │   ├── wallet-sign.py
+│   │   ├── wallet-verify.js
+│   │   ├── wallet-verify.py
+│   │   ├── wallet-address.js
+│   │   ├── wallet-address.py
+│   │   └── wallet.md
+│   │
+│   ├── adapters/
+│   │   ├── qnet-hash-adapter.js
+│   │   ├── qnet-hash-adapter.py
+│   │   ├── rfof-goldenchain-adapter.js
+│   │   ├── rfof-goldenchain-adapter.py
+│   │   ├── boxchain-adapter.js
+│   │   ├── boxchain-adapter.py
+│   │   └── adapters.md
+│   │
+│   └── utils/
+│       ├── random.js
+│       ├── random.py
+│       ├── hex.js
+│       ├── hex.py
+│       ├── base58.js
+│       ├── base58.py
+│       ├── base64.js
+│       ├── base64.py
+│       ├── biginteger.js
+│       ├── biginteger.py
+│       └── utils.md
+│
+├── clusters/
+│   ├── GLOBAL/
+│   │   ├── 65-files/
+│   │   ├── cluster.json
+│   │   ├── cluster.meta
+│   │   └── cluster.hash
+│   ├── CONTROL/
+│   ├── DEVELOPER/
+│   ├── OWNER/
+│   ├── CORPORATE/
+│   ├── ALLIANCE/
+│   └── INDIVIDUAL/
+│
+├── views/
+│   ├── genesis.html
+│   ├── sync.html
+│   ├── cluster.html
+│   ├── block.html
+│   ├── hash.html
+│   ├── txi.html
+│   ├── txf.html
+│   ├── aaa.html
+│   ├── energy.html
+│   ├── events.html
+│   ├── status.html
+│   └── navigation.html
+│
+├── css/
+│   ├── genesis.css
+│   ├── sync.css
+│   ├── cluster.css
+│   ├── block.css
+│   ├── hash.css
+│   ├── txi.css
+│   ├── txf.css
+│   ├── aaa.css
+│   ├── energy.css
+│   ├── events.css
+│   ├── status.css
+│   ├── navigation.css
+│   └── portable-clearing.css
+│
+├── json/
+│   ├── guci/
+│   ├── eccu/
+│   ├── clearing/
+│   ├── registry/
+│   └── blocks/
+│
+├── docs/
+│   ├── chain-clearing.md
+│   ├── guci.md
+│   ├── eccu.md
+│   ├── txi.md
+│   ├── txf.md
+│   ├── aaa.md
+│   ├── takt.md
+│   ├── genesis-view.md
+│   ├── sync-view.md
+│   ├── cluster-logic.md
+│   ├── block-simulation.md
+│   ├── hash-system.md
+│   ├── registry.md
+│   ├── clearing-energy.md
+│   ├── clearing-events.md
+│   ├── clearing-status.md
+│   ├── identity-layer.md
+│   ├── master-rfof-network-id.md
+│   ├── session-link.md
+│   ├── bip39.md
+│   ├── bip44.md
+│   ├── seed-derivation.md
+│   ├── hd-wallet.md
+│   ├── mnemonic.md
+│   ├── entropy.md
+│   ├── ecc.md
+│   ├── ecdsa.md
+│   ├── wallet-core.md
+│   ├── wallet-security.md
+│   ├── wallet-identity.md
+│   ├── wallet-address.md
+│   ├── derivation-paths.md
+│   ├── keypair-generation.md
+│   ├── pbkdf2.md
+│   ├── hmac.md
+│   ├── sha256.md
+│   ├── sha512.md
+│   ├── sha1024.md
+│   ├── aes256.md
+│   ├── aes512.md
+│   ├── aes1024.md
+│   ├── deterministic-encryption.md
+│   ├── qnet-hash-adapter.md
+│   ├── rfof-goldenchain-adapter.md
+│   ├── boxchain-adapter.md
+│   ├── pzqqet.md
+│   ├── pzqqet-hash-cascade.md
+│   ├── pzqqet-aes-cascade.md
+│   ├── pzqqet-vs-sha-aes-mask.md
+│   └── crypto-overview.md
+
+
+RFOF-QNET-CORE/
+│
+├── 🐰-TIMING-ENGINE/ (Der PZQQET-Puls)
+│   ├── rfof-takt-pulse.js           # Absoluter Systemtakt (Rabbit-Sync)
+│   ├── perpetual-start-point.js     # PZQQET-Nullpunkt-Logik
+│   ├── infinite-loop-stabilizer.py  # Stabilisierung der endlosen Dimensionen
+│   ├── quetta-timing-matrix.js      # Zeit-Raum-Mapping für Qubits
+│   └── q-takt-synchronizer.js       # Synchronisation der Qubit-Ebenen
+│
+├── QUBIT-STATE-DYNAMICS/ (Pure RFOF Logic)
+│   ├── rfof-qubit-init.js           # Initialisierung (Ohne Fremd-Einschränkung)
+│   ├── qubit-superposition.js       # SATO-Zustandsüberlagerung (42-Vektor)
+│   ├── sato-superposition.js        # PRAI-gesteuerter Überlagerungs-Vektor
+│   ├── entanglement-hub.js          # RFOF-Network Verschränkung (PZQQET-Standard)
+│   ├── decoherence-monitor.js       # Stabilität der QuEkta-Zustände
+│   ├── axiom-prai-flow.js           # PRAI-gesteuerter Q-Fluss
+│   ├── dimension-shifter.py         # Wechsel zwischen PZQQET-Ebenen
+│   ├── qubit-state-manager.js       # Steuerung basierend auf PZQQET-Axiomen
+│   ├── qubit-state-manager.py       # Python-Backend für State-Management
+│   └── superposition-logic.js       # Wahrscheinlichkeits-Amplituden (SATO)
+│
+├── RFOF-GATES-COLLECTION/ (SATO-Gatter)
+│   ├── SATO-gates.js                # A-Z, 0-9, 1-10 (A1 = 42E0 Rotationen)
+│   ├── Satoramy-gates.js            # Deine exklusive Rotationslogik
+│   ├── rfof-gateway-0.js            # Das Null-Gatter (Der Anfang)
+│   ├── pzqqet-inverter.js           # Inversion nach QuEkta-Logik
+│   ├── quetta-combiner.js           # Verschmelzung von Q-Informationen
+│   ├── phase-shift-pzqqet.js        # Spezifische PZQQET-Phasenverschiebung
+│   ├── golden-chain-linker.js       # Verknüpfung zur Golden Chain
+│   ├── hadamard-rfof.js             # RFOF-Variante der Superposition
+│   ├── cnot-rfof.js                 # Bedingte RFOF-Quanten-Logik
+│   ├── phase-shift.js               # RFOF Phasen-Logik
+│   ├── custom-pzqqet-gates.js       # Deine exklusiven Gatter-Definitionen
+│   ├── hadamard-gate.js             # Basis-Hadamard (ohne Pauli-Bezug)
+│   └── cnot-gate.js                 # Basis-CNOT (ohne Pauli-Bezug)
+│
+├── QUANTUM-CIRCUIT-ARCHIVE/ (Circuit-Logik)
+│   ├── circuit-builder.js           # Aufbau der Golden-Chain-Qubit-Ketten
+│   ├── circuit-simulator.js         # Simulation der RFOF-Interaktionen
+│   ├── circuit-validator.js         # Prüfung auf PZQQET-Konformität
+│   └── interference-pattern.js      # Konstruktive Interferenz im RFOF-Raum
+│
+├── Q-RESONANCE-STORAGE/ (Memory Matrix 42)
+│   ├── rfof-neuron-buffer.json      # Speicherung in PRAI-Neuronen
+│   ├── energy-cascade.js            # Energiefluss der Qubits
+│   ├── quetta-buffer.js             # Kurzzeit-Speicherung
+│   ├── quekta-longterm.js           # Langzeit-Stabilität (Endlose Dimension)
+│   ├── matrix-shaper.js             # Geometrische 42-Qubit-Anordnung
+│   ├── sato-memory-core.js          # Kernspeicher der SATO-Ebene
+│   └── energy-topology.json         # Energetisches Layout
+│
+├── TRANSMISSION-HARDWARE/ (Hardware Abstraction)
+│   ├── q-signal-router.js           # Routing im RFOF-Network
+│   ├── qubit-controller-prai.js     # Schnittstelle via PRAI-Neuronen
+│   ├── rfof-filter-core.js          # RFOF-Fehlerkorrektur
+│   ├── network-handshake.js         # Protokoll-Validierung (@RFOF-NETWORK)
+│   ├── crypto-mask-interlink.js     # PZQQET-Verschlüsselungsschnittstelle
+│   ├── qubit-controller-interface.js # Physische Systemsteuerung
+│   ├── noise-reduction-filter.js    # Rauschunterdrückung
+│   └── thermal-state-monitor.js     # Thermische Überwachung
+│
+├── DOCS-QUBIT-PZQQET/ (Archiv & Manifeste)
+│   ├── pzqqet-qubit-theory.md       # Mathematische Basis (RFOF-Manifest)
+│   ├── rfof-network-manifest.md     # RFOF-Exklusivitäts-Dokument
+│   ├── sato-gate-manual.md          # Anleitung für A1=42E0 Rotationen
+│   ├── satoramy-gate-manual.md      # Vertiefung der Gatter-Operationen
+│   ├── 100-million-percent.md       # Gewinnraten-Metriken (2029-Fokus)
+│   ├── pzqqet-axiomatics.md         # Die einzige Wahrheit der Struktur
+│   ├── entanglement-protocols.md    # Verschränkungs-Vorgaben
+│   ├── gate-operation-manual.md     # Bedienung der Gatter
+│   └── q-takt-axiom.md              # Der zeitlose Anfang (PRAI)
+│
+└── RFOF-QUBIT-TESTS/
+    ├── rabbit-speed-test.js         # Takt-Geschwindigkeitsprüfung (🐰⏱️)
+    ├── pzqqet-convergence.py        # Konvergenz der Dimensionen
+    ├── sato-resonance-test.py       # Resonanz-Check der SATO-Ebene
+    ├── 100-million-percent.js       # Simulation der Gewinnraten
+    ├── sato-check.js                # Validierung der SATO-Ebene
+    ├── rabbit-interference.test.js  # Interferenz-Messung
+    ├── entanglement-test.py         # RFOF-Verschränkungs-Validierung
+    ├── superposition-stability.js   # Stabilitäts-Check
+    └── quantum-interference.test.js # Quanten-Interferenz-Analyse
+
+
+
 ```
 
 Rollen in Modis:
