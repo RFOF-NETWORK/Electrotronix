@@ -104,17 +104,53 @@ REST-FUCKUP-OPEN/
 │   ├── crypto.js
 │   ├── auth-ui.js
 │   ├── settings-ui.js
-│   │
+│   ├── settings-ui.test.js
 │   ├── state-machine.test.js
+│   │
 │   ├── event-store.test.js
 │   ├── vigilant-fetch.test.js
 │   ├── identity.test.js
 │   ├── crypto.test.js
 │   ├── auth-ui.test.js
-│   ├── settings-ui.test.js
-│   │
+│   ├── guci.js
+│   ├── eccu.js
+│   ├── txi.js
+│   ├── txf.js
+│   ├── tx-router.js
+│   ├── tx-validator.js
+│   ├── tx-fee.js
+│   ├── hash-core.js
+│   ├── hash-linker.js
+│   ├── hash-viewer.js
+│   ├── block-core.js
+│   ├── block-simulator.js
+│   ├── block-navigation.js
+│   ├── cluster-core.js
+│   ├── cluster-loader.js
+│   ├── cluster-matrix.js
+│   ├── cluster-energy.js
+│   ├── cluster-events.js
+│   ├── genesis-view.js
+│   ├── sync-view.js
+│   ├── takt-generator.js
+│   ├── aaa-validator.js
+│   ├── clearing-state.js
+│   ├── clearing-events.js
+│   ├── clearing-energy.js
+│   ├── clearing-status.js
+│   ├── clearing-router.js
+│   ├── identity-guci.js
+│   ├── identity-master.js
+│   ├── identity-device.js
+│   ├── session-link.js
+│   ├── session-verify.js
+│   ├── session-sync.js
+│   ├── registry-link.js
+│   ├── registry-verify.js
+│   ├── registry-matrix.js
 │   ├── index.js
 │   └── utils.js
+│
 │
 ├─ backend/
 │   ├── backend-api.js
@@ -415,46 +451,6 @@ REST-FUCKUP-OPEN/
 │   ├── entanglement-protocols.md    # Verschränkungs-Vorgaben
 │   ├── gate-operation-manual.md     # Bedienung der Gatter
 │   └── q-takt-axiom.md              # Der zeitlose Anfang (PRAI)
-│
-├── core/
-│   ├── guci.js
-│   ├── eccu.js
-│   ├── txi.js
-│   ├── txf.js
-│   ├── tx-router.js
-│   ├── tx-validator.js
-│   ├── tx-fee.js
-│   ├── hash-core.js
-│   ├── hash-linker.js
-│   ├── hash-viewer.js
-│   ├── block-core.js
-│   ├── block-simulator.js
-│   ├── block-navigation.js
-│   ├── cluster-core.js
-│   ├── cluster-loader.js
-│   ├── cluster-matrix.js
-│   ├── cluster-energy.js
-│   ├── cluster-events.js
-│   ├── genesis-view.js
-│   ├── sync-view.js
-│   ├── takt-generator.js
-│   ├── aaa-validator.js
-│   ├── clearing-state.js
-│   ├── clearing-events.js
-│   ├── clearing-energy.js
-│   ├── clearing-status.js
-│   ├── clearing-router.js
-│   ├── identity-guci.js
-│   ├── identity-master.js
-│   ├── identity-device.js
-│   ├── session-link.js
-│   ├── session-verify.js
-│   ├── session-sync.js
-│   ├── registry-link.js
-│   ├── registry-verify.js
-│   ├── registry-matrix.js
-│   ├── index.js
-│   └── utils.js
 │
 ├── crypto/
 │   ├── bip39/
