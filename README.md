@@ -1,6 +1,78 @@
 # Electrotronix
 Chain-/Viewer &amp; Wallet
 
+REST-FUCKUP-OPEN/
+│
+├─ index.html
+│
+├─ python/
+│   ├─ logic.py
+│   ├─ helper.js
+│   ├─ schema.sql
+│   ├─ config.yaml
+│   └─ config.yml
+│
+├─ javascript/
+│   ├─ server.js
+│   ├─ util.py
+│   ├─ migrate.sql
+│   ├─ settings.yaml
+│   └─ settings.yml
+│
+├─ database/
+│   ├─ schema.sql
+│   ├─ seed.py
+│   ├─ migrate.js
+│   ├─ db.yaml
+│   └─ db.yml
+│
+├─ config/
+│   ├─ app.yaml
+│   ├─ app.yml
+│   ├─ loader.py
+│   ├─ loader.js
+│   └─ init.sql
+│
+├─ json/
+│   ├─ session/
+│   │   ├─ active_session.json
+│   │   ├─ session_history.json
+│   │   └─ session_lock.json
+│   │
+│   ├─ user/
+│   │   ├─ users.json
+│   │   ├─ usernames.json
+│   │   ├─ userpassword.json
+│   │   └─ phrases.json
+│   │
+│   ├─ wallet/
+│   │   ├─ balances.json
+│   │   ├─ addresses.json
+│   │   ├─ transactions.json
+│   │   └─ mining.json
+│   │
+│   ├─ viewer/
+│   │   ├─ blocks.json
+│   │   ├─ txi.json
+│   │   ├─ txf.json
+│   │   └─ interactions.json
+│   │
+│   ├─ settings/
+│   │   ├─ profile_settings.json
+│   │   ├─ wallet_settings.json
+│   │   └─ rapp_settings.json
+│   │
+│   └─ store/
+│       ├─ rapps.json
+│       ├─ store_state.json
+│       └─ search_history.json
+│
+├─ python/
+├─ javascript/
+├─ database/
+├─ config/
+└─ README.md
+
 Rollen in Modis:
 ```
 User = Benutzer & Admin = Entwickler
