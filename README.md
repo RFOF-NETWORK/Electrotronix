@@ -1,77 +1,367 @@
 # Electrotronix
 Chain-/Viewer &amp; Wallet
 
+
 REST-FUCKUP-OPEN/
 │
 ├─ index.html
+│
+├─ portable.js
+├─ portable.css
+├─ portable.html
+├─ portable.config.js
 │
 ├─ python/
 │   ├─ logic.py
 │   ├─ helper.js
 │   ├─ schema.sql
 │   ├─ config.yaml
-│   └─ config.yml
+│   ├─ config.yml
+│   ├─ wallet_engine.py
+│   ├─ tx_engine.py
+│   ├─ hash_engine.py
+│   ├─ viewer_engine.py
+│   ├─ rapp_engine.py
+│   ├─ session_engine.py
+│   ├─ swap_engine.py
+│   ├─ stake_engine.py
+│   ├─ unstake_engine.py
+│   ├─ mining_engine.py
+│   ├─ txi_engine.py
+│   ├─ txf_engine.py
+│   ├─ tx_validator.py
+│   ├─ tx_fee_engine.py
+│   ├─ hash_linker.py
+│   ├─ hash_encryptor.py
+│   ├─ block_engine.py
+│   ├─ interaction_engine.py
+│   ├─ block_navigation_engine.py
+│   ├─ rapp_vm.py
+│   ├─ rapp_api.py
+│   ├─ rapp_permissions_engine.py
+│   ├─ rapp_store_engine.py
+│   ├─ session_device_engine.py
+│   ├─ session_expiry_engine.py
+│   ├─ session_token_engine.py
+│   ├─ security_engine.py
+│   ├─ encryption_engine.py
+│   ├─ phrase_engine.py
+│   ├─ popup_engine.py
+│   ├─ button_engine.py
+│   ├─ navigation_engine.py
+│   └─ json_engine.py
 │
 ├─ javascript/
 │   ├─ server.js
 │   ├─ util.py
 │   ├─ migrate.sql
 │   ├─ settings.yaml
-│   └─ settings.yml
+│   ├─ settings.yml
+│   ├─ wallet.js
+│   ├─ tx.js
+│   ├─ hash.js
+│   ├─ viewer.js
+│   ├─ rapp.js
+│   ├─ session.js
+│   ├─ swap.js
+│   ├─ stake.js
+│   ├─ unstake.js
+│   ├─ mining.js
+│   ├─ txi.js
+│   ├─ txf.js
+│   ├─ tx_validator.js
+│   ├─ tx_fee.js
+│   ├─ hash_linker.js
+│   ├─ hash_encryptor.js
+│   ├─ block.js
+│   ├─ interaction.js
+│   ├─ block_navigation.js
+│   ├─ rapp_vm.js
+│   ├─ rapp_api.js
+│   ├─ rapp_permissions.js
+│   ├─ rapp_store.js
+│   ├─ session_device.js
+│   ├─ session_expiry.js
+│   ├─ session_token.js
+│   ├─ security.js
+│   ├─ encryption.js
+│   ├─ phrase.js
+│   ├─ popup.js
+│   ├─ button.js
+│   ├─ navigation.js
+│   └─ json_engine.js
+│
+├─ core/
+│   ├── state-machine.js
+│   ├── event-store.js
+│   ├── vigilant-fetch.js
+│   ├── coldnet-warmnet.js
+│   ├── identity.js
+│   ├── parity.js
+│   ├── crypto.js
+│   ├── auth-ui.js
+│   ├── settings-ui.js
+│   │
+│   ├── state-machine.test.js
+│   ├── event-store.test.js
+│   ├── vigilant-fetch.test.js
+│   ├── identity.test.js
+│   ├── crypto.test.js
+│   ├── auth-ui.test.js
+│   ├── settings-ui.test.js
+│   │
+│   ├── index.js
+│   └── utils.js
+│
+├─ backend/
+│   ├── backend-api.js
+│   ├── backend-events.js
+│   ├── backend-errors.js
+│   ├── backend-router.js
+│   ├── backend-storage.js
+│   │
+│   ├── index.js
+│   └── config.js
 │
 ├─ database/
 │   ├─ schema.sql
 │   ├─ seed.py
 │   ├─ migrate.js
 │   ├─ db.yaml
-│   └─ db.yml
+│   ├─ db.yml
+│   ├─ wallet_tables.sql
+│   ├─ tx_tables.sql
+│   ├─ viewer_tables.sql
+│   ├─ rapp_tables.sql
+│   ├─ session_tables.sql
+│   ├─ user_tables.sql
+│   ├─ settings_tables.sql
+│   ├─ security_tables.sql
+│   ├─ rapp_vm_tables.sql
+│   ├─ rapp_api_tables.sql
+│   ├─ interaction_tables.sql
+│   ├─ hash_tables.sql
+│   ├─ session_devices.sql
+│   ├─ session_tokens.sql
+│   └─ session_expiry.sql
 │
 ├─ config/
 │   ├─ app.yaml
 │   ├─ app.yml
 │   ├─ loader.py
 │   ├─ loader.js
-│   └─ init.sql
+│   ├─ init.sql
+│   ├─ wallet_config.yaml
+│   ├─ tx_config.yaml
+│   ├─ viewer_config.yaml
+│   ├─ rapp_config.yaml
+│   ├─ session_config.yaml
+│   ├─ security_config.yaml
+│   ├─ ui_config.yaml
+│   ├─ device_config.yaml
+│   ├─ hash_config.yaml
+│   ├─ mining_config.yaml
+│   ├─ stake_config.yaml
+│   ├─ unstake_config.yaml
+│   ├─ swap_config.yaml
+│   ├─ rapp_vm_config.yaml
+│   └─ rapp_api_config.yaml
 │
 ├─ json/
 │   ├─ session/
 │   │   ├─ active_session.json
 │   │   ├─ session_history.json
-│   │   └─ session_lock.json
+│   │   ├─ session_lock.json
+│   │   ├─ session_tokens.json
+│   │   ├─ session_devices.json
+│   │   └─ session_expiry.json
 │   │
 │   ├─ user/
 │   │   ├─ users.json
 │   │   ├─ usernames.json
 │   │   ├─ userpassword.json
-│   │   └─ phrases.json
+│   │   ├─ phrases.json
+│   │   ├─ user_roles.json
+│   │   ├─ user_settings.json
+│   │   ├─ user_security.json
+│   │   └─ user_activity.json
 │   │
 │   ├─ wallet/
 │   │   ├─ balances.json
 │   │   ├─ addresses.json
 │   │   ├─ transactions.json
-│   │   └─ mining.json
+│   │   ├─ mining.json
+│   │   ├─ staking.json
+│   │   ├─ unstaking.json
+│   │   ├─ swaps.json
+│   │   ├─ deposits.json
+│   │   ├─ withdrawals.json
+│   │   └─ wallet_activity.json
 │   │
 │   ├─ viewer/
 │   │   ├─ blocks.json
 │   │   ├─ txi.json
 │   │   ├─ txf.json
-│   │   └─ interactions.json
+│   │   ├─ interactions.json
+│   │   ├─ hashes.json
+│   │   ├─ block_links.json
+│   │   ├─ viewer_settings.json
+│   │   └─ viewer_activity.json
 │   │
 │   ├─ settings/
 │   │   ├─ profile_settings.json
 │   │   ├─ wallet_settings.json
-│   │   └─ rapp_settings.json
+│   │   ├─ rapp_settings.json
+│   │   ├─ security_settings.json
+│   │   ├─ ui_settings.json
+│   │   └─ device_settings.json
 │   │
 │   └─ store/
 │       ├─ rapps.json
 │       ├─ store_state.json
-│       └─ search_history.json
+│       ├─ search_history.json
+│       ├─ rapp_downloads.json
+│       ├─ rapp_updates.json
+│       └─ rapp_permissions.json
 │
-├─ python/
-├─ javascript/
-├─ database/
-├─ config/
-└─ README.md
+├─ html/
+│   ├─ wallet.html
+│   ├─ profile.html
+│   ├─ settings.html
+│   ├─ viewer.html
+│   ├─ store.html
+│   ├─ tx_viewer.html
+│   ├─ hash_viewer.html
+│   ├─ rapp_vm.html
+│   ├─ rapp_api.html
+│   ├─ mining.html
+│   ├─ staking.html
+│   ├─ unstaking.html
+│   ├─ swap.html
+│   ├─ deposit.html
+│   ├─ withdraw.html
+│   ├─ send.html
+│   ├─ receive.html
+│   ├─ popups.html
+│   ├─ buttons.html
+│   └─ navigation.html
+│
+├─ css/
+│   ├─ style.css
+│   ├─ wallet.css
+│   ├─ profile.css
+│   ├─ settings.css
+│   ├─ viewer.css
+│   ├─ store.css
+│   ├─ tx_viewer.css
+│   ├─ hash_viewer.css
+│   ├─ rapp_vm.css
+│   ├─ rapp_api.css
+│   ├─ mining.css
+│   ├─ staking.css
+│   ├─ unstaking.css
+│   ├─ swap.css
+│   ├─ deposit.css
+│   ├─ withdraw.css
+│   ├─ send.css
+│   ├─ receive.css
+│   ├─ popups.css
+│   ├─ buttons.css
+│   └─ navigation.css
+│
+├─ yaml/
+│   ├─ app.yaml
+│   ├─ wallet.yaml
+│   ├─ tx.yaml
+│   ├─ viewer.yaml
+│   ├─ rapp.yaml
+│   ├─ session.yaml
+│   ├─ security.yaml
+│   ├─ hash.yaml
+│   ├─ mining.yaml
+│   ├─ stake.yaml
+│   ├─ unstake.yaml
+│   ├─ swap.yaml
+│   ├─ rapp_vm.yaml
+│   ├─ rapp_api.yaml
+│   ├─ session_device.yaml
+│   ├─ session_expiry.yaml
+│   └─ session_token.yaml
+│
+├─ yml/
+│   ├─ app.yml
+│   ├─ wallet.yml
+│   ├─ tx.yml
+│   ├─ viewer.yml
+│   ├─ rapp.yml
+│   ├─ session.yml
+│   ├─ security.yml
+│   ├─ hash.yml
+│   ├─ mining.yml
+│   ├─ stake.yml
+│   ├─ unstake.yml
+│   ├─ swap.yml
+│   ├─ rapp_vm.yml
+│   ├─ rapp_api.yml
+│   ├─ session_device.yml
+│   ├─ session_expiry.yml
+│   └─ session_token.yml
+│
+├─ sql/
+│   ├─ schema.sql
+│   ├─ wallet.sql
+│   ├─ tx.sql
+│   ├─ viewer.sql
+│   ├─ rapp.sql
+│   ├─ session.sql
+│   ├─ user.sql
+│   ├─ settings.sql
+│   ├─ security.sql
+│   ├─ rapp_vm.sql
+│   ├─ rapp_api.sql
+│   ├─ interaction.sql
+│   ├─ hash.sql
+│   ├─ session_devices.sql
+│   ├─ session_tokens.sql
+│   └─ session_expiry.sql
+│
+├─ docs/
+│   ├── architecture.md
+│   ├── state-machine.md
+│   ├── event-model.md
+│   ├── parity.md
+│   ├── coldnet-warmnet.md
+│   ├── vigilance.md
+│   ├── settings.md
+│   ├── auth.md
+│   ├── sync.md
+│   ├── status.md
+│   ├── multi-domain-demo.md
+│   ├── event-store.md
+│   ├── vigilant-fetch.md
+│   ├── identity.md
+│   ├── crypto.md
+│   ├── auth-ui.md
+│   ├── settings-ui.md
+│   ├── backend-router.md
+│   ├── backend-storage.md
+│   ├── backend-api.md
+│   ├── backend-events.md
+│   ├── backend-errors.md
+│   ├── minimal-client.md
+│   ├── offline-demo.md
+│   └── portable.md
+│
+└─ examples/
+    ├── minimal-client.html
+    ├── offline-demo.html
+    ├── minimal-client.js
+    ├── minimal-client.css
+    ├── offline-demo.js
+    ├── offline-demo.css
+    ├── multi-domain-demo.js
+    └── multi-domain-demo.css
+
 
 Rollen in Modis:
 ```
